@@ -63,6 +63,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Web" />
@@ -123,6 +124,7 @@
     <Compile Include="Helpers\Web\CookieHelper.cs" />
     <Compile Include="Helpers\Web\SessionHelper.cs" />
     <Compile Include="Helpers\XMLHelper.cs" />
+    <Compile Include="Helpers\Web\YZMHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
