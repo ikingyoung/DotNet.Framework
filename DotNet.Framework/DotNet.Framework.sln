@@ -5,6 +5,22 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Framework.Common", "DotNet.Framework.Common\DotNet.Framework.Common.csproj", "{90A2F1E0-B381-4BD4-A659-B10C4B7C4C66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Framework.EFExtensions", "DotNet.Framework.EFExtensions\DotNet.Framework.EFExtensions.csproj", "{F988FFF7-562F-4C09-9FA0-C542181FE583}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - DLL", "0 - DLL", "{DE0AB65E-8D42-40B7-8975-825BDE008AF2}"
+	ProjectSection(SolutionItems) = preProject
+		0 - DLL\EntityFramework.dll = 0 - DLL\EntityFramework.dll
+		0 - DLL\EntityFramework.SqlServer.dll = 0 - DLL\EntityFramework.SqlServer.dll
+		0 - DLL\Microsoft.Azure.KeyVault.Core.dll = 0 - DLL\Microsoft.Azure.KeyVault.Core.dll
+		0 - DLL\Microsoft.Azure.NotificationHubs.dll = 0 - DLL\Microsoft.Azure.NotificationHubs.dll
+		0 - DLL\Microsoft.Data.Edm.dll = 0 - DLL\Microsoft.Data.Edm.dll
+		0 - DLL\Microsoft.Data.OData.dll = 0 - DLL\Microsoft.Data.OData.dll
+		0 - DLL\Microsoft.Data.Services.Client.dll = 0 - DLL\Microsoft.Data.Services.Client.dll
+		0 - DLL\Microsoft.WindowsAzure.Configuration.dll = 0 - DLL\Microsoft.WindowsAzure.Configuration.dll
+		0 - DLL\Microsoft.WindowsAzure.Storage.dll = 0 - DLL\Microsoft.WindowsAzure.Storage.dll
+		0 - DLL\Newtonsoft.Json.dll = 0 - DLL\Newtonsoft.Json.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +31,10 @@ Global
 		{90A2F1E0-B381-4BD4-A659-B10C4B7C4C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90A2F1E0-B381-4BD4-A659-B10C4B7C4C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90A2F1E0-B381-4BD4-A659-B10C4B7C4C66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F988FFF7-562F-4C09-9FA0-C542181FE583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F988FFF7-562F-4C09-9FA0-C542181FE583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F988FFF7-562F-4C09-9FA0-C542181FE583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F988FFF7-562F-4C09-9FA0-C542181FE583}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

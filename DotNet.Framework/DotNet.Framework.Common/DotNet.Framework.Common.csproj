@@ -33,8 +33,39 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Azure.KeyVault.Core">
+      <HintPath>..\0 - DLL\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.NotificationHubs">
+      <HintPath>..\0 - DLL\Microsoft.Azure.NotificationHubs.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\0 - DLL\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\0 - DLL\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\0 - DLL\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\0 - DLL\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\0 - DLL\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\0 - DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,33 +74,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Cache\GlobalCache.cs" />
+    <Compile Include="Classes\FTP\FTPClient.cs" />
+    <Compile Include="Classes\FTP\FTPOperater.cs" />
+    <Compile Include="Classes\MySecurity.cs" />
+    <Compile Include="Classes\WindowsAzure\SettingManager.cs" />
+    <Compile Include="Classes\WindowsAzure\StorageAccountConfig.cs" />
+    <Compile Include="Classes\WindowsAzure\StorageNotificationhub.cs" />
+    <Compile Include="Classes\WindowsAzure\StorageQueue.cs" />
+    <Compile Include="Classes\WindowsAzure\StorageTable.cs" />
+    <Compile Include="Classes\XML\XMLOperater.cs" />
     <Compile Include="Extensions\Base\ConvertableString.cs" />
     <Compile Include="Extensions\Base\ExtensionGroup.cs" />
     <Compile Include="Extensions\Base\IExtension.cs" />
-    <Compile Include="Extensions\Object\ObjectConvertable.cs" />
+    <Compile Include="Extensions\Convertable\ObjectConvertable.cs" />
+    <Compile Include="Extensions\Convertable\StringConvertable.cs" />
     <Compile Include="Extensions\StringFormatting\StringFormat.cs" />
     <Compile Include="Extensions\StringValidation\StringValidate.cs" />
+    <Compile Include="Classes\LunarDate.cs" />
+    <Compile Include="Helpers\ChineseToPinYinHelper.cs" />
+    <Compile Include="Helpers\CNYHelper.cs" />
     <Compile Include="Helpers\DataTableHelper.cs" />
-    <Compile Include="Helpers\EnCodingHelper.cs" />
+    <Compile Include="Helpers\DB\DbHelperMySQL.cs" />
+    <Compile Include="Helpers\DB\DbHelperOleDb.cs" />
+    <Compile Include="Helpers\DB\DbHelperOra.cs" />
+    <Compile Include="Helpers\DB\DbHelperSQL.cs" />
+    <Compile Include="Helpers\DB\DbHelperSQLite.cs" />
+    <Compile Include="Helpers\DB\DbHelperSQLP.cs" />
+    <Compile Include="Helpers\DB\OracleHelper.cs" />
+    <Compile Include="Helpers\DB\SqlHelper.cs" />
+    <Compile Include="Helpers\DumpHelper.cs" />
+    <Compile Include="Helpers\EncodingHelper.cs" />
     <Compile Include="Helpers\EncryptionHelper.cs" />
+    <Compile Include="Helpers\FileEncodingHelper.cs" />
+    <Compile Include="Helpers\Files\DirFileHelper.cs" />
+    <Compile Include="Helpers\Files\FileOperateHelper.cs" />
+    <Compile Include="Helpers\Files\INIFileHelper.cs" />
+    <Compile Include="Helpers\FTPHelper.cs" />
+    <Compile Include="Helpers\HttpHelper.cs" />
+    <Compile Include="Helpers\JsonHelper.cs" />
     <Compile Include="Helpers\MathHelper.cs" />
+    <Compile Include="Helpers\PinYinHelper.cs" />
+    <Compile Include="Classes\Random\RandomMaker.cs" />
     <Compile Include="Helpers\RegexHelper.cs" />
     <Compile Include="Helpers\SerializationHelper.cs" />
     <Compile Include="Helpers\StreamDataHelper.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Helpers\Web\CookieHelper.cs" />
+    <Compile Include="Helpers\Web\SessionHelper.cs" />
     <Compile Include="Helpers\XMLHelper.cs" />
-    <Compile Include="Linq\ISpecification.cs" />
-    <Compile Include="Linq\PagingCondition.cs" />
-    <Compile Include="Linq\QueryableExtensions.cs" />
-    <Compile Include="Linq\SortCondition.cs" />
-    <Compile Include="Linq\Specification.cs" />
-    <Compile Include="Linq\Specifications\AndNotSpecification.cs" />
-    <Compile Include="Linq\Specifications\AndSpecification.cs" />
-    <Compile Include="Linq\Specifications\CompositeSpecification.cs" />
-    <Compile Include="Linq\Specifications\ExpressionSpecification.cs" />
-    <Compile Include="Linq\Specifications\ICompositeSpecification.cs" />
-    <Compile Include="Linq\Specifications\NotSpecification.cs" />
-    <Compile Include="Linq\Specifications\OrSpecification.cs" />
-    <Compile Include="Linq\Specifications\ParameterReplacer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
